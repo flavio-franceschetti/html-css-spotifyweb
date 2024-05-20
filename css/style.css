@@ -21,17 +21,69 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+:root {
+  /* colors */
+  --main-gray: #d2d2d2;
+  --dark-gray: #757575;
+}
+
 .container {
   height: calc(100vh - 80px);
   display: flex;
 }
 
-/* LEFT NAV BAR */
+img {
+  max-width: 100%;
+}
 
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+h2 {
+  color: #fff;
+}
+/* ******************************** */
+/* REUSABLE */
+
+#nav-selected-item {
+  color: var(--main-gray);
+}
+/* LEFT NAV BAR */
 #nav-bar {
+  flex-shrink: 0;
   width: 300px;
+  padding: 1.6rem 2.4rem;
   /* debug */
   background-color: black;
+}
+
+#spotify-logo {
+  width: 60%;
+  margin-bottom: 4.8rem;
+}
+
+/* nav list settings */
+.main-nav button {
+  background: none;
+  border: none;
+  color: var(--dark-gray);
+  font-size: 1.8rem;
+  margin-bottom: 2.4rem;
+  font-weight: 700;
+}
+
+/* icons */
+.fa-house,
+.fa-magnifying-glass,
+.fa-bars {
+  font-size: 3rem;
+  margin-right: 5px;
+}
+
+.fa-bars {
+  transform: rotate(90deg);
 }
 
 /* MAIN */
@@ -52,8 +104,7 @@ main {
 }
 
 .btn {
-  text-decoration: none;
-  color: #fff;
+  font-weight: 700;
   font-size: 1.4rem;
   border: 2px solid #fff;
   padding: 0.8rem 1.6rem;
