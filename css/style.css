@@ -46,6 +46,13 @@ h2 {
   margin-bottom: 1.2rem;
 }
 
+hr {
+  border: none;
+  height: 2px;
+  color: var(--dark-gray);
+  background-color: var(--dark-gray);
+}
+
 /* ******************************** */
 /* REUSABLE */
 .nav-selected-item {
@@ -55,10 +62,12 @@ h2 {
 }
 /* LEFT NAV BAR */
 #nav-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   flex-shrink: 0;
   width: 300px;
   padding: 1.6rem 2.4rem;
-  /* debug */
   background-color: black;
 }
 
@@ -101,6 +110,51 @@ li {
   stroke-width: 15;
 }
 
+/* playlist nav */
+
+.playlist-nav li {
+  margin-bottom: 2.4rem;
+}
+
+/* nav last section profile */
+.download-app {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 0.8rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--dark-gray);
+}
+
+.download-app svg {
+  width: 2.4rem;
+  fill: var(--dark-gray);
+  stroke: var(--dark-gray);
+  stroke-width: 1;
+}
+
+/* profile */
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-top: 0.8rem;
+}
+
+.profile-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.profile svg {
+  width: 3rem;
+  background-color: var(--dark-gray);
+  border-radius: 50%;
+  padding: 3px;
+}
+
 /* MAIN */
 main {
   width: 100%;
@@ -129,6 +183,8 @@ main {
 /* PLAYER */
 #player {
   height: 80px;
+  position: relative;
+  z-index: 999;
   /* debug */
   background-color: lightcoral;
 }
