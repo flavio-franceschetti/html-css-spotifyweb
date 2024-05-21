@@ -1,0 +1,62 @@
+/* --- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+
+/* GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+
+:root {
+  /* colors */
+  --main-gray: #d2d2d2;
+  --dark-gray: #757575;
+}
+
+.container {
+  height: calc(100vh - 80px);
+  display: flex;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+h2 {
+  margin-bottom: 1.2rem;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  color: var(--dark-gray);
+  background-color: var(--dark-gray);
+}
+
+/* ******************************** */
+/* REUSABLE */
+.nav-selected-item {
+  color: var(--main-gray);
+  fill: var(--main-gray);
+  stroke: var(--main-gray);
+}

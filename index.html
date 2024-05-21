@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="img/Spotify_icon-icons.com_66783.ico"
+    />
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,7 +26,7 @@
       referrerpolicy="no-referrer"
     />
     <!-- ******************* -->
-
+    <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Spotify boolean</title>
   </head>
@@ -151,6 +156,24 @@
       </main>
     </div>
     <!-- PLAYER SECTION -->
-    <section id="player"></section>
+    <section id="player">
+      <div class="left-side">
+        <div class="current-song">
+          <div class="song-cover">
+            <img src="img/sinister.jpeg" alt="" />
+          </div>
+          <div>
+            <a href="#" class="song-name">Sinister</a>
+            <a href="#" class="author-name">Author name</a>
+          </div>
+        </div>
+        <div class="current-song-icon">
+          <i class="fa-regular fa-heart"></i>
+          <i class="fa-regular fa-folder"></i>
+        </div>
+      </div>
+      <div class="center-player"></div>
+      <div class="right-side"></div>
+    </section>
   </body>
 </html>
