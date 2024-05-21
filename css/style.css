@@ -190,17 +190,23 @@ main {
 }
 /* ***************************** */
 
-/* created for main section */
+/* popular artist and created for main section */
 /* ***************************** */
-.created-for h2 {
+.created-for h2,
+.popular-artist h2 {
   margin-bottom: 1.6rem;
 }
 
-.created-for span {
+.created-for span,
+.popular-artist span {
   color: rgba(255, 255, 255, 0.5);
   display: inline-block;
   font-size: 1.4rem;
   margin-bottom: 3.2rem;
+}
+
+.artist-img img {
+  border-radius: 50%;
 }
 
 /* ***************************** */

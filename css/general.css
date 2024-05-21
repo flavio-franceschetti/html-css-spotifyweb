@@ -67,9 +67,9 @@ hr {
 
 .row {
   display: flex;
-  gap: 10px;
+  gap: 20px;
 }
 
 .col {
-  width: calc(100% / 6 - 10px);
+  width: calc(100% / 6 - 20px);
 }
