@@ -15,6 +15,7 @@
   background-color: black;
   /* debug */
   overflow-y: scroll;
+  scrollbar-width: none;
 }
 
 #spotify-logo {
@@ -24,6 +25,10 @@
 
 .right-nav {
   margin-bottom: 2.4rem;
+}
+
+.playlist-nav h3 {
+  margin-bottom: 1.2rem;
 }
 
 button {
@@ -84,7 +89,6 @@ li {
   display: flex;
   align-items: center;
   gap: 8px;
-
   margin-top: 0.8rem;
 }
 
@@ -102,14 +106,17 @@ li {
 
 /* MAIN */
 main {
+  overflow-y: scroll;
+  scrollbar-width: none;
   width: 100%;
   background-color: #141922;
 }
-
+/* main nav menu */
+/* ***************************** */
 .main-nav {
   width: 60%;
   margin: 0 auto;
-  margin-top: 4.4rem;
+  padding-top: 9.6rem;
 }
 
 .main-nav ul {
@@ -150,9 +157,42 @@ main {
   bottom: -3px;
   right: -1px;
 }
+/* ***************************** */
+
+/* recently played main section */
+/* ***************************** */
+.recently-played {
+  padding: 0 3.2rem;
+  margin: 4.8rem 0;
+}
+
+.recently-played h2 {
+  margin-bottom: 4.8rem;
+}
+
+.album-img {
+  margin-bottom: 0.8rem;
+}
+
+.album-name {
+  text-align: center;
+}
+
+.album-name h3 {
+  margin-bottom: 0.6rem;
+}
+
+.subtitle {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.2rem;
+}
+
+/* ***************************** */
 
 /* upegrade btn section */
 .upgrade-btn {
+  position: fixed;
+  width: calc(100% - 300px);
   background-color: rgba(0, 0, 0, 0.8);
   align-content: center;
   text-align: right;
