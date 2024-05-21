@@ -59,7 +59,15 @@ hr {
 
 /* ******************************** */
 /* REUSABLE */
+.selected-green-bar {
+  border-left: 4px solid greenyellow;
+}
+
 .nav-selected-item {
+  color: var(--main-gray);
+}
+
+.nav-selected-item svg {
   color: var(--main-gray);
   fill: var(--main-gray);
   stroke: var(--main-gray);
