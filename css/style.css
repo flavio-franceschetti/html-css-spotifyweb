@@ -49,7 +49,6 @@ li {
 }
 
 /* playlist nav */
-
 .playlist-nav li {
   margin-bottom: 2.4rem;
 }
@@ -124,10 +123,10 @@ main {
   align-items: center;
   justify-content: space-between;
 
-  height: 80px;
+  height: 100px;
   position: relative;
   z-index: 999;
-  padding: 0.8rem 1.6rem;
+  padding: 1.6rem;
   /* debug */
   background-color: #282828;
 }
@@ -169,4 +168,43 @@ main {
 
 .current-song-icon .fa-heart {
   margin-right: 10px;
+}
+
+/* center player */
+.center-player {
+  width: calc(100% / 3);
+}
+
+.player-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 10px;
+
+  font-size: 2.8rem;
+}
+
+.center-player .fa-circle-play {
+  font-size: 3.6rem;
+}
+
+.stats-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.minute-bar {
+  width: 100%;
+  height: 4px;
+  background-color: var(--dark-gray);
+}
+
+.minute-bar div {
+  width: 20%;
+  height: 4px;
+  background-color: #fff;
 }
