@@ -28,6 +28,7 @@
     <!-- ******************* -->
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
     <title>Spotify boolean</title>
   </head>
   <body>
@@ -35,7 +36,7 @@
     <div class="container">
       <!-- left nav bar -->
       <nav id="nav-bar">
-        <div>
+        <div class="section-up">
           <div id="spotify-logo">
             <img src="img/logo.svg" alt="Spotify logo" />
           </div>
@@ -84,35 +85,39 @@
           </ul>
 
           <!-- second navigation part -->
-          <ul class="playlist-nav">
-            <h3>PLAYLIST</h3>
-            <li>
-              <button>
-                <i class="fa-solid fa-square-plus"></i> Crea Playlist
-              </button>
-            </li>
-            <li>
-              <button>Nome playlist</button>
-            </li>
-            <li>
-              <button>Nome playlist</button>
-            </li>
-            <li>
-              <button>Nome playlist</button>
-            </li>
-            <li>
-              <button>Nome playlist</button>
-            </li>
-            <li>
-              <button>Nome playlist</button>
-            </li>
-            <li>
-              <button>Nome playlist</button>
-            </li>
-            <li>
-              <button>Nome playlist</button>
-            </li>
-          </ul>
+          <div class="overflow">
+            <div class="playlist-section">
+              <h3>PLAYLIST</h3>
+              <ul class="playlist-nav">
+                <li>
+                  <button>
+                    <i class="fa-solid fa-square-plus"></i> Crea Playlist
+                  </button>
+                </li>
+                <li>
+                  <button>Nome playlist</button>
+                </li>
+                <li>
+                  <button>Nome playlist</button>
+                </li>
+                <li>
+                  <button>Nome playlist</button>
+                </li>
+                <li>
+                  <button>Nome playlist</button>
+                </li>
+                <li>
+                  <button>Nome playlist</button>
+                </li>
+                <li>
+                  <button>Nome playlist</button>
+                </li>
+                <li>
+                  <button>Nome playlist</button>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
 
         <!-- nav last section -->
@@ -312,9 +317,9 @@
 
         <div class="stats-bar">
           <span>0:25</span>
-          <span class="minute-bar">
+          <div class="minute-bar">
             <div>&nbsp;</div>
-          </span>
+          </div>
           <span>4:35</span>
         </div>
       </div>

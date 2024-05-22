@@ -31,10 +31,11 @@ body {
 .container {
   height: calc(100vh - 100px);
   display: flex;
+  overflow-y: hidden;
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
 }
 
 a {
@@ -79,5 +80,5 @@ hr {
 }
 
 .col {
-  width: calc(100% / 6 - 20px);
+  width: calc(100% / 6);
 }

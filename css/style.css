@@ -11,15 +11,15 @@
   justify-content: space-between;
   flex-shrink: 0;
   width: 300px;
-  /* padding: 1.6rem 2.4rem; */
   background-color: black;
-  /* debug */
-  overflow-y: scroll;
-  scrollbar-width: none;
+}
+
+.section-up {
+  min-height: 300px;
 }
 
 #spotify-logo {
-  width: 70%;
+  width: 60%;
   margin-bottom: 4.8rem;
   padding: 1.6rem 0 0 2.4rem;
 }
@@ -30,14 +30,6 @@
 
 .right-nav li {
   padding-left: 2.4rem;
-}
-
-.playlist-nav {
-  padding: 0 2.4rem;
-}
-
-.playlist-nav h3 {
-  margin-bottom: 1.2rem;
 }
 
 button {
@@ -71,12 +63,29 @@ li {
 }
 
 /* playlist nav */
+.playlist-section h3 {
+  margin-bottom: 1.2rem;
+}
+
+.playlist-section {
+  padding: 0 2.4rem;
+  height: 800px;
+  overflow-y: hidden;
+}
+
 .playlist-nav li {
   margin-bottom: 2.4rem;
 }
 
+.overflow {
+  height: 350px;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
 /* nav last section profile */
 .nav-profile-section {
+  background-color: black;
   padding: 0 2.4rem 1.6rem 2.4rem;
 }
 
@@ -119,7 +128,7 @@ li {
 
 /* MAIN */
 main {
-  overflow-y: scroll;
+  overflow-y: auto;
   scrollbar-width: none;
   width: 100%;
   background-color: #141922;
@@ -248,13 +257,8 @@ main {
 #player {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-
   height: 100px;
-  position: relative;
-  z-index: 999;
   padding: 1.6rem;
-  /* debug */
   background-color: #282828;
 }
 
@@ -310,7 +314,6 @@ main {
   justify-content: center;
   gap: 30px;
   margin-bottom: 10px;
-
   font-size: 2.8rem;
 }
 

@@ -1,0 +1,36 @@
+/* ***************************** */
+/* 1300px (MD--DESKTOP) */
+/* ***************************** */
+@media all and (max-width: 1300px) {
+  /* MAIN */
+  .main-nav {
+    width: 90%;
+  }
+
+  .main-nav ul {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  main .row {
+    flex-wrap: wrap;
+  }
+
+  main .col {
+    width: calc(100% / 4 - 20px);
+  }
+}
+
+/* ***************************** */
+/* 900px (s--DESKTOP) */
+/* ***************************** */
+@media all and (max-width: 900px) {
+  /* MAIN */
+  main .row {
+    justify-content: space-between;
+  }
+
+  main .col {
+    width: calc(100% / 2 - 20px);
+  }
+}
