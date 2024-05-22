@@ -60,29 +60,16 @@
     text-align: center;
   }
 
-  .big-logo {
-    display: none;
-  }
-
   .small-logo {
     display: inline-block;
     width: 50%;
   }
 
-  .playlist-section {
-    display: none;
-  }
-
-  .right-nav button span:last-child {
-    display: none;
-  }
-
-  .selected-green-bar {
-    border: none;
-  }
-
-  /* Profile section */
-  .nav-profile-section span {
+  .playlist-section,
+  .right-nav button span:last-child,
+  .selected-green-bar,
+  .nav-profile-section span,
+  .big-logo {
     display: none;
   }
 

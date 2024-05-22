@@ -28,12 +28,17 @@
   display: none;
 }
 
-.right-nav {
+.left-nav {
   margin-bottom: 2.4rem;
 }
 
-.right-nav li {
+.left-nav li {
   padding-left: 2.4rem;
+}
+
+.left-nav button:hover {
+  color: #fff;
+  cursor: pointer;
 }
 
 button {
@@ -66,10 +71,21 @@ li {
   stroke-width: 15;
 }
 
+button:hover .nav-icon {
+  stroke: #fff;
+  fill: #fff;
+  cursor: pointer;
+}
+
 /* playlist nav */
 .playlist-section {
   height: calc(100vh - 470px);
   padding: 0 2.4rem;
+}
+
+.playlist-section button:hover {
+  color: #fff;
+  cursor: pointer;
 }
 
 .playlist-section h3 {
@@ -105,6 +121,15 @@ li {
   font-size: 1.8rem;
   font-weight: 700;
   color: var(--dark-gray);
+}
+
+.download-app:hover {
+  color: #fff;
+}
+
+.download-app:hover svg {
+  fill: #fff;
+  stroke: #fff;
 }
 
 .download-app svg {
@@ -162,6 +187,10 @@ main {
   color: var(--dark-gray);
 }
 
+.main-nav ul a:hover {
+  color: #fff;
+}
+
 .selected-section {
   position: relative;
   padding-bottom: 2px;
@@ -204,6 +233,25 @@ main {
 
 .album-img {
   margin-bottom: 0.8rem;
+  position: relative;
+}
+
+.album-img:hover img {
+  filter: brightness(0.5);
+}
+
+.album-img .fa-circle-play {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4.4rem;
+  z-index: 999;
+}
+
+.album-img:hover .fa-circle-play {
+  display: inline-block;
 }
 
 .album-name {
@@ -254,11 +302,16 @@ main {
 }
 
 .btn {
+  display: inline-block;
   font-weight: 700;
   font-size: 1.4rem;
   border: 2px solid #fff;
   padding: 0.8rem 1.6rem;
   border-radius: 10rem;
+}
+
+.btn:hover {
+  transform: scale(1.1);
 }
 
 /* PLAYER */
@@ -295,6 +348,11 @@ main {
   margin-bottom: 2px;
 }
 
+.song-name:hover,
+.author-name:hover {
+  text-decoration: underline;
+}
+
 .author-name {
   display: block;
   color: rgba(255, 255, 255, 0.5);
@@ -305,6 +363,12 @@ main {
   margin-left: 4.8rem;
   font-size: 1.8rem;
   color: rgba(255, 255, 255, 0.5);
+}
+
+.current-song-icon .fa-heart:hover,
+.current-song-icon .fa-folder:hover {
+  color: #fff;
+  cursor: pointer;
 }
 
 .current-song-icon .fa-heart {
@@ -323,6 +387,15 @@ main {
   gap: 30px;
   margin-bottom: 10px;
   font-size: 2.8rem;
+}
+
+.player-btn .fa-solid:hover {
+  cursor: pointer;
+}
+
+.player-btn .fa-circle-play:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .center-player .fa-circle-play {
@@ -344,9 +417,27 @@ main {
 }
 
 .minute-bar div {
+  position: relative;
   width: 20%;
   height: 4px;
-  background-color: #fff;
+  background-color: var(--main-gray);
+}
+
+.minute-bar:hover div {
+  background-color: greenyellow;
+  cursor: pointer;
+}
+
+.minute-bar:hover .bullet {
+  display: inline-block;
+}
+
+.bullet {
+  display: none;
+  font-size: 6.4rem;
+  position: absolute;
+  top: -42px;
+  right: -8px;
 }
 
 /* right side */
@@ -366,7 +457,25 @@ main {
 }
 
 .volume-bar div {
+  position: relative;
   width: 30%;
   height: 4px;
-  background-color: #fff;
+  background-color: var(--main-gray);
+}
+
+.volume-bar:hover div {
+  background-color: greenyellow;
+  cursor: pointer;
+}
+
+.volume-bar:hover .volume-bullet {
+  display: inline-block;
+}
+
+.volume-bullet {
+  display: none;
+  font-size: 6.4rem;
+  position: absolute;
+  top: -42px;
+  right: -8px;
 }
