@@ -24,6 +24,10 @@
   padding: 1.6rem 0 0 2.4rem;
 }
 
+.small-logo {
+  display: none;
+}
+
 .right-nav {
   margin-bottom: 2.4rem;
 }
