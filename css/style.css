@@ -103,7 +103,7 @@ button:hover .nav-icon {
 .overflow {
   overflow-y: auto;
   scrollbar-width: none;
-  height: 100%;
+  height: calc(100% - 100px);
 }
 
 /* nav last section profile */
@@ -433,10 +433,14 @@ main {
 }
 
 .bullet {
+  height: 1.4rem;
+  width: 1.4rem;
+  background-color: #fff;
+  border-radius: 50%;
   display: none;
-  font-size: 6.4rem;
+  /* font-size: 6.4rem; */
   position: absolute;
-  top: -42px;
+  top: -5px;
   right: -8px;
 }
 
@@ -468,13 +472,12 @@ main {
   cursor: pointer;
 }
 
-.volume-bar:hover .volume-bullet {
+.volume-bar:hover .bullet {
   display: inline-block;
 }
 
 .volume-bullet {
   display: none;
-  font-size: 6.4rem;
   position: absolute;
   top: -42px;
   right: -8px;

@@ -80,5 +80,6 @@ hr {
 }
 
 .col {
+  cursor: pointer;
   width: calc(100% / 6);
 }
