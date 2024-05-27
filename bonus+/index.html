@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="img/Spotify_icon-icons.com_66783.ico"
+    />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ******************* -->
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ******************* -->
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <title>Spotify boolean BONUS+</title>
+  </head>
+  <body>
+    <!-- FLEX CONTAINER -->
+    <div class="container">
+      <!-- left nav bar -->
+      <nav id="nav-bar">
+        <div class="section-up">
+          <div id="spotify-logo">
+            <img class="big-logo" src="img/logo.svg" alt="Spotify logo" />
+            <img
+              class="small-logo"
+              src="img/logo-small.svg"
+              alt="Spotify logo"
+            />
+          </div>
+          <!-- first navigation -->
+          <ul class="left-nav">
+            <li class="selected-green-bar">
+              <button class="nav-selected-item">
+                <span class="nav-icon">
+                  <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z"
+                    />
+                  </svg>
+                </span>
+                <span>Home</span>
+              </button>
+            </li>
+            <li>
+              <button>
+                <span class="nav-icon">
+                  <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </span>
+                <span>Cerca</span>
+              </button>
+            </li>
+            <li>
+              <button>
+                <span class="nav-icon"
+                  ><svg
+                    viewBox="0 0 512 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z"
+                    />
+                  </svg>
+                </span>
+                <span>La tua libreria</span>
+              </button>
+            </li>
+          </ul>
+
+          <!-- second navigation part -->
+          <div class="playlist-section">
+            <h3>PLAYLIST</h3>
+            <button>
+              <i class="fa-solid fa-square-plus"></i> Crea Playlist
+            </button>
+          </div>
+          <div class="overflow">
+            <ul class="playlist-nav">
+              <li>
+                <button>Nome playlist</button>
+              </li>
+              <li>
+                <button>Nome playlist</button>
+              </li>
+              <li>
+                <button>Nome playlist</button>
+              </li>
+              <li>
+                <button>Nome playlist</button>
+              </li>
+              <li>
+                <button>Nome playlist</button>
+              </li>
+              <li>
+                <button>Nome playlist</button>
+              </li>
+              <li>
+                <button>Nome playlist</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- nav last section -->
+        <div class="nav-profile-section">
+          <a class="download-app" href="#">
+            <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <title>Download icon</title>
+              <path
+                d="M12 11.657V6h-1v5.65L9.076 9.414l-.758.65 3.183 3.702 3.195-3.7-.758-.653L12 11.657zM11.5 2C7.358 2 4 5.358 4 9.5c0 4.142 3.358 7.5 7.5 7.5 4.142 0 7.5-3.358 7.5-7.5C19 5.358 15.642 2 11.5 2zm0 14C7.916 16 5 13.084 5 9.5S7.916 3 11.5 3 18 5.916 18 9.5 15.084 16 11.5 16z"
+                fill-rule="evenodd"
+              />
+            </svg>
+            <span>Installa app</span></a
+          >
+          <hr />
+          <a class="profile" href="#">
+            <svg viewBox="0 0 80 90" xmlns="http://www.w3.org/2000/svg">
+              <title>User Icon</title>
+              <path
+                d="M67.74 61.78l-14.5-8.334c-.735-.422-1.24-1.145-1.385-1.98-.145-.835.088-1.685.638-2.33l5.912-6.93c3.747-4.378 5.81-9.967 5.81-15.737v-2.256c0-6.668-2.792-13.108-7.658-17.67C51.622 1.92 45.17-.386 38.392.054c-12.677.82-22.607 11.772-22.607 24.934v1.483c0 5.77 2.063 11.36 5.81 15.736l5.912 6.933c.55.644.783 1.493.638 2.33-.143.834-.648 1.556-1.383 1.98l-14.494 8.33C4.7 66.077 0 74.15 0 82.844v6.76h3.333v-6.76c0-7.5 4.055-14.46 10.59-18.174l14.5-8.334c1.597-.918 2.692-2.487 3.007-4.302.315-1.815-.19-3.66-1.387-5.06l-5.913-6.936c-3.23-3.775-5.01-8.594-5.01-13.57v-1.484c0-11.41 8.562-20.9 19.488-21.608 5.85-.377 11.415 1.61 15.67 5.598 4.26 3.992 6.605 9.404 6.605 15.24v2.254c0 4.976-1.778 9.796-5.01 13.57l-5.915 6.935c-1.195 1.4-1.7 3.246-1.386 5.06.313 1.816 1.41 3.385 3.008 4.303l14.507 8.338c6.525 3.71 10.58 10.67 10.58 18.17v6.76H80v-6.76c0-8.695-4.7-16.768-12.26-21.063z"
+                fill="#ffffff"
+                fill-rule="evenodd"
+              />
+            </svg>
+            <span class="profile-name">Jhon Doe</span>
+          </a>
+        </div>
+      </nav>
+      <!-- MAIN SECTION -->
+      <main>
+        <!-- upgrade button -->
+        <div class="upgrade-btn">
+          <a class="btn" href="#">EFFETTUA L'UPGRADE</a>
+        </div>
+        <div class="main-section">
+          <!-- Main nav -->
+          <div class="main-nav">
+            <ul>
+              <li><a class="selected-section" href="#">IN EVIDENZA</a></li>
+              <li><a href="#">PODCAST</a></li>
+              <li><a href="#">CLASSIFICHE</a></li>
+              <li><a href="#">GENERI E MOOD</a></li>
+              <li><a href="#">NUOVE USCITE</a></li>
+              <li><a href="#">SCOPRI</a></li>
+            </ul>
+          </div>
+          <!-- recently played section -->
+          <div class="recently-played">
+            <h2>Recently played</h2>
+            <div class="row">
+              <!-- album -->
+              <div class="col">
+                <div class="album-img">
+                  <i class="fa-regular fa-circle-play"></i>
+                  <img src="img/metal_lifting.jpg" alt="" />
+                </div>
+                <div class="album-name">
+                  <h3>Heavy Metal</h3>
+                  <span class="subtitle">subtitle</span>
+                </div>
+              </div>
+              <!-- album -->
+              <div class="col">
+                <div class="album-img">
+                  <i class="fa-regular fa-circle-play"></i>
+                  <img src="img/stranger.jpeg" alt="" />
+                </div>
+                <div class="album-name">
+                  <h3>
+                    Stranger Things, vol.1 &#40;a Netflix Original Series
+                    Soundtrack&#41;
+                  </h3>
+                  <span class="subtitle">subtitle</span>
+                </div>
+              </div>
+              <!-- album -->
+              <div class="col">
+                <div class="album-img">
+                  <i class="fa-regular fa-circle-play"></i>
+                  <img src="img/aquietplace.jpeg" alt="" />
+                </div>
+                <div class="album-name">
+                  <h3>A quiet place</h3>
+                  <span class="subtitle">subtitle</span>
+                </div>
+              </div>
+              <!-- album -->
+              <div class="col">
+                <div class="album-img">
+                  <i class="fa-regular fa-circle-play"></i>
+                  <img src="img/split.jpeg" alt="" />
+                </div>
+                <div class="album-name">
+                  <h3>Split</h3>
+                  <span class="subtitle">subtitle</span>
+                </div>
+              </div>
+              <!-- album -->
+              <div class="col">
+                <div class="album-img">
+                  <i class="fa-regular fa-circle-play"></i>
+                  <img src="img/cure.jpeg" alt="" />
+                </div>
+                <div class="album-name">
+                  <h3>A cure fo wellness</h3>
+                  <span class="subtitle">subtitle</span>
+                </div>
+              </div>
+              <!-- album -->
+              <div class="col">
+                <div class="album-img">
+                  <i class="fa-regular fa-circle-play"></i>
+                  <img src="img/sinister.jpeg" alt="" />
+                </div>
+                <div class="album-name">
+                  <h3>Sinister</h3>
+                  <span class="subtitle">subtitle</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CREATED FOR PLAYLISTS -->
+          <div class="created-for">
+            <h2>Creato per Jhon Doe</h2>
+            <span>Più ascolti, più accurati saranno i suggerimenti.</span>
+            <div class="row">
+              <div class="col">
+                <div class="album-img">
+                  <i class="fa-regular fa-circle-play"></i>
+                  <img src="img/radar.jpeg" alt="" />
+                </div>
+                <div class="album-name">
+                  <h3>Relase Radar</h3>
+                </div>
+              </div>
+              <div class="col">
+                <div class="album-img">
+                  <i class="fa-regular fa-circle-play"></i>
+                  <img src="img/mixdaily.jpeg" alt="" />
+                </div>
+                <div class="album-name">
+                  <h3>Daily Mix 1</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- popular artist section -->
+          <div class="popular-artist">
+            <h2>Artisti più popolari</h2>
+            <span>Più ascolti, più accurati saranno i suggerimenti.</span>
+            <div class="row">
+              <div class="col">
+                <div class="album-img artist-img">
+                  <i class="fa-regular fa-circle-play"></i>
+                  <img src="img/youg.jpeg" alt="" />
+                </div>
+                <div class="album-name">
+                  <h3>Lana del Rey</h3>
+                </div>
+              </div>
+              <div class="col">
+                <div class="album-img artist-img">
+                  <i class="fa-regular fa-circle-play"></i>
+                  <img src="img/einaudi.jpeg" alt="" />
+                </div>
+                <div class="album-name">
+                  <h3>Ludovico Enaudi</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- PLAYER SECTION -->
+    <section id="player">
+      <!-- LEFT SIDE -->
+      <div class="left-side">
+        <div class="current-song">
+          <div class="song-cover">
+            <img src="img/sinister.jpeg" alt="" />
+          </div>
+          <div>
+            <a href="#" class="song-name">Sinister</a>
+            <a href="#" class="author-name">Author name</a>
+          </div>
+        </div>
+        <div class="current-song-icon">
+          <i class="fa-regular fa-heart"></i>
+          <i class="fa-regular fa-folder"></i>
+        </div>
+      </div>
+      <!-- CENTER -->
+      <div class="center-player">
+        <div class="player-btn">
+          <i class="fa-solid fa-shuffle"></i>
+          <i class="fa-solid fa-backward-step"></i>
+          <i class="fa-regular fa-circle-play"></i>
+          <i class="fa-solid fa-forward-step"></i>
+          <i class="fa-solid fa-arrow-rotate-right"></i>
+        </div>
+
+        <div class="stats-bar">
+          <span>0:25</span>
+          <div class="minute-bar">
+            <div>
+              &nbsp;
+              <span class="bullet">&nbsp;</span>
+            </div>
+          </div>
+          <span>4:35</span>
+        </div>
+      </div>
+      <!-- RIGHT SIDE -->
+      <div class="right-side">
+        <i class="fa-solid fa-list-ul"></i>
+        <i class="fa-solid fa-tv"></i>
+        <i class="fa-solid fa-volume-high"></i>
+        <div class="volume-bar">
+          <div>
+            &nbsp;
+            <span class="bullet">&nbsp;</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

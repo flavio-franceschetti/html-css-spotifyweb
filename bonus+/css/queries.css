@@ -1,0 +1,88 @@
+/* ***************************** */
+/* 1300px (MD) */
+/* ***************************** */
+@media all and (max-width: 1300px) {
+  /* MAIN */
+  .main-nav {
+    width: 90%;
+  }
+
+  .main-nav ul {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  main .row {
+    flex-wrap: wrap;
+  }
+
+  main .col {
+    width: calc(100% / 4 - 20px);
+  }
+}
+
+/* ***************************** */
+/* 900px (s) */
+/* ***************************** */
+@media all and (max-width: 900px) {
+  .container {
+    height: calc(100vh - 70px);
+  }
+
+  /* MAIN */
+  main .row {
+    justify-content: space-between;
+  }
+
+  main .col {
+    width: calc(100% / 2 - 20px);
+  }
+
+  /* PLAYER section */
+  #player {
+    height: 70px;
+  }
+}
+
+/* ***************************** */
+/* 760px (xs) */
+/* ***************************** */
+@media all and (max-width: 760px) {
+  /* left nav */
+  #nav-bar {
+    width: 78px;
+  }
+
+  #spotify-logo {
+    width: 100%;
+    margin: 1.6rem 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .small-logo {
+    display: inline-block;
+    width: 50%;
+  }
+
+  .playlist-section,
+  button span:last-child,
+  .selected-green-bar,
+  .nav-profile-section span,
+  .big-logo,
+  .overflow {
+    display: none;
+  }
+
+  /* MAIN */
+  /* upgrade button */
+
+  .upgrade-btn {
+    width: calc(100% - 78px);
+  }
+
+  /* player */
+  .player-btn {
+    gap: 10px;
+  }
+}
